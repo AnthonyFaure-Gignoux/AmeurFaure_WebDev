@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- 
+     Page web créé dans le cadre du cours de web Dev le 24/06/2019
+     Version : 0.0
+     Auteur : Ameur et Faure-Gignoux
+     Email : oussama.ameur@isen.yncrea.fr et anthony.faure-gignoux@isen.yncrea.fr
+-->
+
+<html lang="fr-FR">
+    <head>
+        <title>AmeurFaure</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ameur et Faure-Gignoux">
+        <meta name="description" content="Le site qui vous fait voyager dans le système solaire !">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/styles.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <picture>
+                <source media="(max-width: 576px)" srcset="../images/banniere_small.png">
+                <source srcset="../images/banniere.png">
+                <img src="../images/banniere.png" alt="Bannière">
+                <!-- Image basée sur la création originale de ShiftGraphiX sur Pixabay : 
+                    https://pixabay.com/fr/couple-stoppie-sportive-vélomoteur-3156613/ -->
+
+
+            </picture>
+            <nav>
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="Voyager.html">Voyager</a></li>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <section id="principal">
+            <article>
+                <p>
+                    Ce site vous permet de sélectionner deux planètes du système solaire. En renseignant la vitesse de voyage, nous vous dirons combien de temps vous voyagerai. Et grâce à votre poids, nous pourrons établir l'énergie cinétique emmagasinnée.
+                </p>
+                <img src="images/attention.png" alt="Disclaimer">
+                <p>
+                    Les distances des planètes sont prises au Soleil. Donc la distance utilisé pour les calculs entre les planètes n'est réel que dans le cas où toutes les planètes sont alignés.
+                </p>
+
+            </article>
+            <aside>
+                <img src="images/conseilcasque01.jpg" alt="Conseil du mois : Casque Cross">
+                <p>Pour le style: Furious replica</p>
+                <img src="images/conseilcasque02.jpg" alt="Conseil du mois : Intgéral Piste">
+                <p>Pour le confort: Stars racing</p>
+            </aside>
+
+        </section>
+        <section id="thematique">
+            <h1>Catégories les plus populaires</h1>
+            <article id="gauche"><a href="pages/route.html">Route</a></article>
+            <article id="milieu"><a href="pages/cross.html">Cross</a></article>
+            <article id="droite"><a href="pages/piste.html">Piste</a></article>
+        </section>
+        <footer>
+            <p>&copy;2019 AmeurFaure - Créé par <a href="mailto:oussama.ameur@isen.yncrea.fr">Ameur OUSSAMA</a> et <a href="mailto:anthony.faure-gignoux@isen.yncrea.fr">Anthony FAURE-GIGNOUX</a> <p>
+        </footer>
+    </body>
+</html>

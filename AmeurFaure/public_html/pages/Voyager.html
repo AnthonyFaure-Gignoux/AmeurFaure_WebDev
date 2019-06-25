@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- 
+     Page web créé dans le cadre du cours de web Dev le 24/06/2019
+     Version : 0.2
+     Auteur : Ameur et Faure-Gignoux
+     Email : oussama.ameur@isen.yncrea.fr et anthony.faure-gignoux@isen.yncrea.fr
+-->
+
+<html lang="fr-FR">
+    <head>
+        <title>AmeurFaure</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ameur et Faure-Gignoux">
+        <meta name="description" content="Le site qui vous fait voyager dans le système solaire !">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/simulateur.css" rel="stylesheet" type="text/css">
+        <link href="../css/styles.css" rel="stylesheet" type="text/css"/>
+        <script src="../JS/test.js" type="text/javascript"></script>
+        <script src="../JS/CalculJS.js" type="text/javascript"></script>
+        <link rel="icon" href="../favicon.ico">
+    </head>
+    <body>
+        <header>
+            <picture>
+                <source media="(max-width: 576px)" srcset="../images/banniere_small.png">
+                <source srcset="../images/banniere.png">
+                <img src="../images/banniere.png" alt="Bannière">
+
+                <!-- Image basée sur la création originale de ShiftGraphiX sur Pixabay : 
+                    https://pixabay.com/fr/couple-stoppie-sportive-vélomoteur-3156613/ -->
+
+
+            </picture>
+            <nav>
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="Voyager.html">Voyager</a></li>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section id="formulaire">
+            <h1>Combien de temps mettriez vous à rejoindre d'autres planètes du système solaire ?</h1>
+
+            <form id="form_simulateur" name="form_simulateur">
+                <fieldset id="recueilinfos">
+                    <legend>Veuillez renseigner les deux champs suivants : </legend>
+                    <table>
+                        <tr>
+                            <td><input type="checkbox" name="chk_Mars[]" id="chk_agv" value="0" disabled="disabled"><label for="chk_agv">agv</label></td>
+                            <td><input type="checkbox" name="chk_Jupiter[]" id="chk_airoh" value="1" disabled="disabled"><label for="chk_airoh">airoh</label></td>
+                            <td><input type="checkbox" name="chk_Terre[]" id="chk_arai" value="3" disabled="disabled"><label for="chk_arai">araï</label></td>
+                        </tr>
+                    </table>
+                    <p>
+                        <label for="vitesse">Vitesse (km/h) :</label>
+                        <input type="range" name="vitesse" id="vitesse" min="100" max="1079000000"  value="100">
+                        <output for="vitesse" id="curseur_vitesse">100</output>
+                    </p>
+                    <p>
+                        <label for="masse">Votre masse :</label> 
+                        <input type="number" name="masse" id="masse" min="0" max="99999" value="0">
+                    </p>
+
+                    <h2 id="tempsvoyage"></h2>
+                </fieldset>
+                <p id="controles">
+                    <input type="reset" id="btn_annuler" value="Effacer les données">
+                </p>
+            </form>
+        </section>
+        <footer>
+            <p>&copy;2019 AmeurFaure - Créé par <a href="mailto:oussama.ameur@isen.yncrea.fr">Ameur OUSSAMA</a> et <a href="mailto:anthony.faure-gignoux@isen.yncrea.fr">Anthony FAURE-GIGNOUX</a> <p>
+        </footer>
+    </body>
+</html>
